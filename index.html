@@ -1,55 +1,79 @@
-.music-icon {
-    padding-right: 10px;
-    transition: transform 0.2s ease-in-out;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.music-icon:hover {
-    transform: scale(1.2);
-}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>YYL Website</title>
 
-.jumbotron h1 {
-    animation: pop-out 1s ease-out forwards;
-}
 
-@keyframes pop-out {
-    0% {
-        transform: translateY(-100%);
-    }
-    50% {
-        transform: translateY(20%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
+</head>
 
-.jumbotron h1 {
-    animation: pop-out 1s ease-out forwards, jiggle 0.5s ease-in-out 0.5s infinite alternate;
-}
+<body>
+    <!-- Navigation Bar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#"> <img src="/images/ElvisLogo.png" width="300px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home" img><span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#videos">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#interests">Interests</a>
+                    </li>
 
-@keyframes jiggle {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(5deg);
-    }
-}
+                    <li class="nav-item">
+                        <a href="https://github.com/KuroP1">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                    </li>
 
-.border {
-    border-width: 8px;
-    border-color: #333;
-}
+            </ul>
 
-.terminal-style {
-    font-family: monospace;
-    font-size: medium;
-    color: #0ff;
-    background-color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    overflow-wrap: break-word;
-}   </nav>
+
+
+        </div>
+        <i class="music-icon fa fa-music"></i>
+        <audio controls>
+            <source src="music/watr-fluid-10149.mp3" type="audio/mpeg">
+        </audio>
+
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="/images/ElvisLogo.png" width="300px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="#about">About</a> <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#videos">Videos</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#interests">Interests</a>
+            </div>
+
+        </div>
+        <i class="music-icon fa fa-music"></i>
+        <audio controls>
+                <source src="music/watr-fluid-10149.mp3" type="audio/mpeg">
+            </audio>
+    </nav>
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
@@ -67,14 +91,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h1 class="section-title">About</h1>
                     <hr />
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="/images/selfie.jpeg" alt="portrait photo" class="img-fluid rounded-circle mx-auto d-block">
+                <div class="col-lg-4 gif-container">
+                    <div class="tenor-gif-embed" data-postid="16298165" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+                        <a href="https://tenor.com/view/hacker-pepe-meme-shades-typing-gif-16298165">Hacker Pepe Sticker</a> from <a href="https://tenor.com/search/hacker-stickers">Hacker Stickers</a>
+                    </div>
+                    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
                 </div>
+
                 <div class="col-lg-8">
                     <p class="terminal-style">
 
@@ -85,9 +113,9 @@
         </div>
     </section>
     <script>
-        let text = " I am currently studying Computing at The Hong Kong Polytechnic University. I have a passion for using technology to solve problems and improve the world around us  I enjoy learning about new technologies and experimenting with them in my projects";
+        let text = `I am currently studying Computing at The Hong Kong Polytechnic University. \n I have a passion for using technology to solve problems and improve the world around us  I enjoy learning about new technologies and experimenting with them in my projects`;
         let i = 0;
-        let speed = 20;
+        let speed = 10;
 
         function typeOut() {
             if (i < text.length) {
@@ -99,27 +127,174 @@
 
         typeOut();
     </script>
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <!-- Video section :) pls subscrible    -->
+    <section id="videos" class="bg-light">
+        <h1 class="section-title">Videos</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V2UVfXa2drs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in- picture; web-share" allowfullscreen></iframe>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="section-title">Skills</h1>
+        <!--new row-->
+        <div class="container text-center">
+            <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+                <div class="col">
+                    <div class="p-3">
+                        <div class="card-container mx-4">
+                            <div class="card">
+                                <img class="front" src="/LOGO/HTMLLOGO.svg" alt="html_logo">
+                                <img class="back" src="/LOGO/HTMLWORD.svg" alt="html_word">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        <div class="card-container mx-4">
+                            <div class="card">
+                                <img class="front" src="/LOGO/JAVALOGO.svg" alt="java_logo">
+                                <img class="back" src="/LOGO/JAVAWORD.svg" alt="java_word">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        <div class="card-container mx-4">
+                            <div class="card">
+                                <img class="front" src="/LOGO/CSHARPLOGO.svg" alt="CSHARP_logo">
+                                <img class="back" src="/LOGO/CSHARPWORD.svg" alt="CSHARP_word">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        <div class="card-container mx-4">
+                            <div class="card">
+                                <img class="front" src="/LOGO/PHPLOGO.svg" alt="PHP_logo">
+                                <img class="back" src="/LOGO/PHPWORD.svg" alt="PHP_word">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="p-3">
+                        <div class="card-container mx-4">
+                            <div class="card">
+                                <img class="front" src="/LOGO/SQLLOGO.svg" alt="SQL_logo">
+                                <img class="back" src="/LOGO/SQLWORD.svg" alt="SQL_word">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        <div class="card-container mx-4">
+                            <div class="card">
+                                <img class="front" src="/LOGO/FLUTTERLOGO.svg" alt="FULLTER_logo">
+                                <img class="back" src="/LOGO/FLUTTERWORD.svg" alt="FULTTER_word">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        <div class="card-container mx-4">
+                            <div class="card">
+                                <img class="front" src="/LOGO/REACTLOGO.svg" alt="REACT_logo">
+                                <img class="back" src="/LOGO/REACTWORD.svg" alt="REACT_word">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        <div class="card-container mx-4">
+                            <div class="card">
+                                <img class="front" src="/LOGO/ANDRIODSTUDIOLOGO.svg" alt="AS_logo">
+                                <img class="back" src="/LOGO/ANDRIODSTUDIOWORD.svg" alt="AS_word">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- Interests Section -->
+    <section id="interests" class="bg-light">
         <div class="container">
+
             <div class="row">
-                <div class="col-lg-12 text-center text-white">
+                <div class="col-lg-12">
+                    <table class="table table-bordered table-responsive-sm">
+                        <thead>
+                            <tr>
+                                <th colspan=3 class="text-center">
+                                    <h1 class="section-title">Interests</h1>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-center">Camping</th>
+                                <th class="text-center">Fishing</th>
+                                <th class="text-center">Throwing Dart</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td style="width:33%;" class="text-center"><img src="/images/camping.jpg" width="300px" height="300px" alt="Camping" class="img-fluid"></td>
+
+
+
+                                <td style="width:33%;" class="text-center"><img src="/images/fishing.jpg" width="300px" height="300px" alt="Fishing" class="img-fluid"></td>
+
+
+
+                                <td style="width:33%;" class="text-center"><img src="/images/darts.png" width="300px" height="300px" alt="Throwing Dart" class="img-fluid"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12 text-center text-white ">
                     <h2>Socials</h2>
                 </div>
-                <div class="col-lg-12 text-center text-white py-3">
-                    <img src="images/angry.png" alt="Angry Face" width="100" height="50">
-                    <img src="images/girlHappy.jpg" alt="girlHappy" width="100" height="50">
-                    <img src="images/main.png" alt="main" width="100" height="50">
-                    <img src="images/happy.jpg" alt="happy" width="100" height="50">
+                <div class="col-lg-12 text-center text-white py-3 d-flex justify-content-center">
+                    <a href="https://github.com/KuroP1" class="footericon">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/elviiisssss_/" class="footericon">
+                        <img src="/images/icons8-instagram.svg" alt="Follow me on Instagram" class="svgicon">
+                    </a>
+                    <a href="https://discordapp.com/users/218485941751382017" class="footericon">
+                        <img src="/images/icons8-discord.svg" alt="My Discord" class="svgicon">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCJItmqtb_jZxLTK4lijDQVA" class="footericon">
+                        <img src="/images/icons8-youtube.svg" alt="My Discord" class="svgicon">
+                    </a>
                 </div>
-                <div class="col-lg-12 text-center text-white">
+                <div class="col-lg-12 text-center text-white ">
                     <h2>Contact</h2>
                 </div>
-                <div class="col-lg-12 text-center text-white">
-                    <a href="mailto:21028949d@connect.polyu.hk">21028949d@connect.polyu.hk</a>
+                <div class="col-lg-12 text-center text-white ">
+                    <a href="mailto:21028949d@connect.polyu.hk ">21028949d@connect.polyu.hk</a>
                 </div>
-                <div class="col-lg-12 text-center text-white">
+                <div class="col-lg-12 text-center text-white ">
                     <p>&copy; 2023 Elvis Yeung. Stay hype!</p>
                 </div>
             </div>
